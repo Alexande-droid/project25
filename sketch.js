@@ -18,7 +18,7 @@ function setup() {
 	world = engine.world;
 	dustbinObj=new dustbin(1100,550);
 	paperObject=new paper(200,450,40);
-	groundObject=new ground(width/2,670,width,20);
+	groundObject=new ground(width/2,570,width,20);
 	//Create a Ground
 	
 
@@ -40,14 +40,11 @@ function setup() {
 
 function draw() {
   rectMode(CENTER);
-  background("grey");
+  background("white");
 
-  paperObject.display();
   groundObject.display();
   dustbinObj.display();
-  
-  
- 
+  paperObject.display();
   
   
  
@@ -60,6 +57,7 @@ function keyPressed() {
     
   	}
 }
+
 
 
 
